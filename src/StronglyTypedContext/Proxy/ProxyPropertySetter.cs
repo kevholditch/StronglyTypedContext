@@ -18,7 +18,7 @@ namespace StronglyTypedContext.Proxy
             foreach (var property in _scenarioPropertyFetcher.Fetch(item.GetType()))
             {
                 var proxy = _proxyFactory.Create(property);
-                property.SetValue(item, proxy);
+                property.SetValue(item, proxy, null);
             }
         }
     }
