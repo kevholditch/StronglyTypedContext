@@ -1,8 +1,6 @@
 StronglyTypedContext
 ====================
 
-## What
-
 A library for creating strongly typed scenario contexts in specflow using Castle Dynamic Proxy
 
 ## Why
@@ -28,29 +26,30 @@ This library provies a strongly typed context.  To use the library all you have 
 Example
 =======
 
-public interface IMyContext
-{
-    public int Value { get; set; }
-    public string AnotherValue { get; set; }
-}
-
-public class StepDefiniton : BaseBinding
-{
-    [ScenarioContext]
-    public virtual IMyContext Context { get; set; }
-
-    [Given("I am doing something")]
-    public void GivenIAmDoingSomething()
+    public interface IMyContext
     {
-       // You can now use your context here
-       Context.Value = 42;
+        public int Value { get; set; }
+        public string AnotherValue { get; set; }
     }
+
+    public class StepDefiniton : BaseBinding
+    {
+        [ScenarioContext]
+        public virtual IMyContext Context { get; set; }
+
+        [Given("I am doing something")]
+        public void GivenIAmDoingSomething()
+        {
+           // You can now use your context here
+           Context.Value = 42;
+        }
     
-    [When("I execute")]
-    public void WhenIExecute()
-    {
-       // Context is persisted using Scenario context
-       var value = Context.Value; // will be 42
+        [When("I execute")]
+        public void WhenIExecute()
+        {
+           // Context is persisted using Scenario context
+           var value = Context.Value; // will be 42
+        }
     }
-}
+
 
