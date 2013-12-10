@@ -8,10 +8,10 @@ A library for creating strongly typed scenario contexts in specflow using Castle
 Specflow is a fantastic library for writing BDD tests.  One of the downfalls of the library is to keep data between steps you have to rely on the ScenarioContext.Current dictionary.  The signature of the dictionary is:
 
 To add an item:
-ScenarioContext.Current.Add(string key, object value);
+    ScenarioContext.Current.Add(string key, object value);
 
 To get an item:
-var item = ScenarioContext.Current[key];
+    var item = ScenarioContext.Current[key];
 
 The problem with this is that you end up with "magic" strings littered throughout your code.  You can tidy this up a bit by using constants but it still gets messy.  Wouldn't it be much nicer if we could have a strongly typed context?
 
