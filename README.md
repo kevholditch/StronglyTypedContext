@@ -53,4 +53,5 @@ Example
         }
     }
 
-
+## More information
+For more information on how the code was written see [my blog post(http://kevinholditch.co.uk/2013/12/10/strongly-typed-scenariocontext-in-specflow/)]
