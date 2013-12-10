@@ -1,0 +1,19 @@
+﻿<?xml version="1.0"?>
+<package >
+        <metadata>
+                <id>StronglyTypedContext</id>
+                <version>$version$</version>
+                <title>$title$</title>
+                <authors>$author$</authors>
+                <owners>$author$</owners>
+                <projectUrl>https://github.com/kevholditch/StronglyTypedContext</projectUrl>
+                <requireLicenseAcceptance>false</requireLicenseAcceptance>
+                <description>$description$</description>
+                <copyright>Copyright 2013</copyright>
+                <tags>specflow scenario context strongly typed stronglytypedcontext castle dynamic proxy</tags>
+                <dependencies>
+                  <dependency id="Castle.Core" version="3.0.0" />
+                  <dependency id="SpecFlow" version="1.8.0" />
+                </dependencies>
+        </metadata>
+</package>

@@ -60,7 +60,6 @@
     <Compile Include="Proxy\ScenarioPropertyFetcher.cs" />
     <Compile Include="ScenarioContextAttribute.cs" />
     <Compile Include="Specflow\IScenarioContext.cs" />
-    <Compile Include="IStronglyTypedScenarioContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Specflow\SpecFlowScenarioContext.cs" />
     <Compile Include="BaseBinding.cs" />
@@ -68,6 +67,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="StronglyTypedContext.nuspec" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
