@@ -18,6 +18,7 @@ The problem with this is that you end up with "magic" strings littered throughou
 ## How
 
 This library provies a strongly typed context.  To use the library all you have to do is
+* Install the [![StronglyTypedContext](https://www.nuget.org/packages/StronglyTypedContext)] nuget package from nuget.org
 * Derive your step definition class from the abstract BaseBinding class
 * Create an interface to hold your scenario context information
 * Create a public virtual property on your step definition class of interface you have created and mark it with the ScenarioContext attribute
