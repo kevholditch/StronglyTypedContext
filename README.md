@@ -18,10 +18,10 @@ The problem with this is that you end up with "magic" strings littered throughou
 ## How
 
 This library provies a strongly typed context.  To use the library all you have to do is
-1) Derive your step definition class from the abstract BaseBinding class
-2) Create an interface to hold your scenario context information
-3) Create a public virtual property on your step definition class of interface you have created and mark it with the ScenarioContext attribute
-4) That's it you are good to go
+* Derive your step definition class from the abstract BaseBinding class
+* Create an interface to hold your scenario context information
+* Create a public virtual property on your step definition class of interface you have created and mark it with the ScenarioContext attribute
+* That's it you are good to go
 
 Example
 =======
