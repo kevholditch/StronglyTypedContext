@@ -13,7 +13,7 @@ To add an item:
 To get an item:
     `var item = ScenarioContext.Current[key];`
 
-The problem with this is that you end up with "magic" strings littered throughout your code and you have to cast to and from object.  You can tidy this up a bit by using constants but it still gets messy.  Wouldn't it be much nicer if we could have a strongly typed context?
+The problem with this is that you end up with "magic" strings littered throughout your code and you have to cast to and from object.  You can tidy this up a bit by using constants and generics but it is still a bit clunky.  Wouldn't it be much nicer if we could have a strongly typed context?
 
 ## How
 
