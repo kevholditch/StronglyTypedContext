@@ -15,14 +15,8 @@ namespace StronglyTypedContext.Proxy
             _keyGenerator = keyGenerator;
         }
 
-        public ProxyInterceptor() : this(new SpecFlowScenarioContext(), new KeyGenerator())
-        {            
-        }
-
-
         public void Intercept(IInvocation invocation)
         {
-            
             if (invocation.Method == null || !invocation.Method.IsSpecialName)
                 throw new MethodsNotSupportOnInterfaceException();
             
@@ -37,8 +31,6 @@ namespace StronglyTypedContext.Proxy
             {
                 invocation.ReturnValue = _scenarioContext[key];
             }
-
-            
         }
     }
 }

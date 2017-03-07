@@ -63,6 +63,7 @@
     <Compile Include="ScenarioContextAttribute.cs" />
     <Compile Include="Specflow\IScenarioContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Specflow\SpecFlowCurrentScenarioContext.cs" />
     <Compile Include="Specflow\SpecFlowScenarioContext.cs" />
     <Compile Include="BaseBinding.cs" />
   </ItemGroup>
